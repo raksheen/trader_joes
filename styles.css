@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css?family=Concert+One");
+body {
+    font-family: "Concert One", cursive;
+    background: rgb(233, 208, 160);
+}
+.backgroundImage {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.container {
+    height: 900px;
+    width: 1000px;
+    position: absolute;
+    /*    display: flex;
+*/
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    padding-top: 250px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 8px black;
+    border-radius: 5%;
+}
+
+.title {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: black;
+    height: 10px;
+}
+.logoImage {
+    width: 800px;
+    align-content: center;
+    display: inline-block;
+}
+
+.question {
+    padding: 20px;
+    font-size: 25px;
+    background: black;
+    border-radius: 20px;
+    margin: 10px 0 10px 0;
+    color: #f6f6f6;
+}
+.image1,
+.image2,
+.image3,
+.image4 {
+    width: 280px;
+    height: 250px;
+}
+.question1,
+.question2,
+.question3,
+.question4 {
+    flex-wrap: wrap;
+    float: left;
+    padding: 2px;
+}
+.option {
+    width: 470px;
+    display: inline-block;
+    padding: 10px 0 10px 15px;
+    vertical-align: middle;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 10px 0 10px 10px;
+    color: #000000;
+    border-radius: 20px;
+    font-size: 25px;
+}
+.option:hover {
+    background: black;
+    color: #f6f6f6;
+}
+.next-btn {
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.5);
+    width: 100px;
+    height: 35px;
+    border-radius: 20px;
+    cursor: pointer;
+    float: right;
+    margin: 10px;
+}
+.next-btn:hover {
+    background: black;
+    color: #f6f6f6;
+}
+.result {
+    height: 100px;
+    text-align: center;
+    font-size: 75px;
+}
+.option input:check .option {
+    background: black;
+    color: red;
+}
+/*styling for Intro page */
+
+.groceries_background {
+    opacity: 1;
+}
+.container_startpage {
+    background-size: cover;
+    /*    background-size: 100% 100%;
+*/
+    position: relative;
+    text-align: center;
+}
+.circle {
+    height: 300px;
+    width: 400px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+.circle:hover {
+    opacity: 0.8;
+}
+.game_title {
+    position: absolute;
+    top: 18%;
+    left: 36%;
+    transform: translate(-50%, -50%);
+    color: rgb(188, 32, 47);
+}
+.start_button {
+    align-content: center;
+    position: relative;
+}
+.mealprep {
+    text-align: center;
+}
+/*2nd page */
+#container_page2 {
+    left: 50%;
+}
+.startButton {
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    background: red;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+.rules {
+    text-align: center;
+    width: 700px;
+}
+.img_knowTheRules {
+    left: 50%;
+}
+#result {
+    font-size: 100px;
+    padding-top: 400px;
+}
