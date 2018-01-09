@@ -2,25 +2,26 @@
 body {
     font-family: "Concert One", cursive;
     background: rgb(233, 208, 160);
-}
-.backgroundImage {
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
-.container {
-    height: 900px;
-    width: 1000px;
-    position: absolute;
-    /*    display: flex;
+    /*    height: 100vh;
 */
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    background-image: url("./background_2.jpg");
+    /*overflow-x: hidden;
+    overflow-y: hidden;*/
+}
+./*backgroundImage {
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+}*/
+    .container {
+    width: auto;
+    /* width: 98vw;*/
+    position: relative;
     background: rgba(255, 255, 255, 0.5);
     padding: 20px;
-    padding-top: 250px;
-    border: 1px solid black;
-    box-shadow: 0px 0px 8px black;
+    padding-top: 20px;
+    border: 100px solid black;
+    box-shadow: 0px 0px 20px black;
     border-radius: 5%;
 }
 
@@ -41,17 +42,21 @@ body {
 .question {
     padding: 20px;
     font-size: 25px;
-    background: black;
+    /*    background: brown;
+*/
     border-radius: 20px;
-    margin: 10px 0 10px 0;
+    margin: 0px 0 10px 0;
     color: #f6f6f6;
+    background: rgb(199, 36, 51);
 }
 .image1,
 .image2,
 .image3,
 .image4 {
     width: 280px;
-    height: 250px;
+    height: 220px;
+    text-align: center;
+    cursor: pointer;
 }
 .question1,
 .question2,
@@ -60,36 +65,56 @@ body {
     flex-wrap: wrap;
     float: left;
     padding: 2px;
+    margin-left: 20px;
+    cursor: pointer;
 }
 .option {
     width: 470px;
     display: inline-block;
     padding: 10px 0 10px 15px;
     vertical-align: middle;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.4);
     margin: 10px 0 10px 10px;
     color: #000000;
     border-radius: 20px;
     font-size: 25px;
+    cursor: pointer;
+    /* animation: boxesAnimate 5s infinite;*/
 }
 .option:hover {
-    background: black;
-    color: #f6f6f6;
+    transform: scale(1.03);
 }
+
 .next-btn {
+    font-family: "Concert One", cursive;
     border: none;
     outline: none;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgb(199, 36, 51);
     width: 100px;
-    height: 35px;
+    height: 70px;
     border-radius: 20px;
     cursor: pointer;
+    padding-right: 10px;
     float: right;
-    margin: 10px;
+    font-size: 30px;
+    margin: 20px;
+    animation: nextBalloon 4s infinite;
 }
 .next-btn:hover {
     background: black;
     color: #f6f6f6;
+    transform: scale(1.2);
+}
+@keyframes nextBalloon {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 .result {
     height: 100px;
@@ -112,16 +137,41 @@ body {
     position: relative;
     text-align: center;
 }
+/*this contains Trader Joe's' logo*/
 .circle {
     height: 300px;
     width: 400px;
     position: absolute;
     top: 10%;
     left: 10%;
+    cursor: pointer;
+    animation: circulate 3s;
+    animation: bubbleUp 5s;
+}
+/*@keyframes circulate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}*/
+@keyframes bubbleUp {
+    0% {
+        transform: scale(0.8);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 .circle:hover {
-    opacity: 0.8;
+    opacity: 1.3;
+    transform: scale(1.1);
 }
+
 .game_title {
     position: absolute;
     top: 18%;
@@ -135,28 +185,72 @@ body {
 }
 .mealprep {
     text-align: center;
+    color: black;
+    margin-bottom: 0;
+    /*    color: rgb(207, 35, 52);
+*/
 }
-/*2nd page */
+
+/*2nd page: rules page; */
+
 #container_page2 {
-    left: 50%;
-}
-.startButton {
-    width: 300px;
-    height: 40px;
-    border-radius: 10px;
-    background: red;
-    font-size: 20px;
+    margin: auto;
+    width: 50%;
     text-align: center;
+}
+
+.rules {
+    padding: 0px 10% 0px 10%;
+}
+
+.startButton_pageTwo {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background: rgb(207, 35, 52);
+    text-align: center;
+    width: 50%;
+    line-height: 150%;
+    text-decoration: none !important;
+    font-family: "Concert One", cursive;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 30px;
+    color: black;
+    animation: blinking 2s infinite;
+}
+.startButton_pageTwo a:link,
+a:-webkit-any-link {
     color: white;
 }
-.rules {
-    text-align: center;
-    width: 700px;
+.startButton_pageTwo:hover {
+    background: black;
+    color: #f6f6f6;
 }
-.img_knowTheRules {
-    left: 50%;
+@keyframes blinking {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.08);
+        background: black;
+    }
+    100% {
+        transform: scale(1);
+    }
 }
+
+/*last page*/
 #result {
     font-size: 100px;
     padding-top: 400px;
+    /*    background-image: url("./background_2.jpg");
+*/
+}
+.restartStyle {
+    width: 100px;
+    background: red;
+    color: white;
 }

@@ -2,6 +2,21 @@ console.log("Question.js is linked!");
 
 var questions = [
     {
+        question: "First things first. Choose a breakfast item: ",
+        option1: "Broccoli & Cheese Quiche",
+        option2: "Ham & Cheese Crossiants",
+        option3: "Organic Chia Bars",
+        option4: "Chocolate Babka",
+        value1: 2.29,
+        value2: 4.69,
+        value3: 2.99,
+        value4: 4.99,
+        image1: "./images/quiche.jpg",
+        image2: "./images/ham_cheese.jpg",
+        image3: "./images/chia.jpg",
+        image4: "./images/babka.jpeg"
+    },
+    {
         question: "One of your lunches gets to be a frozen meal! Choose one: ",
         option1: "Chicken Tikka Masala",
         option2: "Low Carb Mac n' Cheese",
@@ -17,26 +32,11 @@ var questions = [
         image4: "./images/wild_salmon.jpg"
     },
     {
-        question: "Choose a breakfast item: ",
-        option1: "Mexican Quiche",
-        option2: "Quick Oats",
-        option3: "Country Punmpkin Spice Granola Cereal",
-        option4: "French Toast",
-        value1: 2.99,
-        value2: 1.99,
-        value3: 3.49,
-        value4: 4.49,
-        image1: "./images/quiche.jpg",
-        image2: "./images/oats.jpg",
-        image3: "./images/granola_cereal.jpg",
-        image4: "./images/french_toast.jpg"
-    },
-    {
-        question: "Choose a frozen source of protein",
+        question: "Choose a frozen source of protein:",
         option1: "Mandarin Orange Chicken",
         option2: "Organic Beef Sirloin Roast",
-        option3: "Fish Nuggets",
-        option4: "Veggie Burgers",
+        option3: "Jumbo Sea Scallops",
+        option4: "Quinoa Veggie Burgers",
         value1: 4.99,
         value2: 10.99,
         value3: 3.99,
@@ -56,29 +56,29 @@ var questions = [
         value2: 1.99,
         value3: 2.99,
         value4: 2.99,
-        image1: "./images/cauliflower.jpg",
+        image1: "./images/cauliflower.png",
         image2: "./images/greenbeans.jpg",
         image3: "./images/friedrice.jpg",
         image4: "./images/roasted_pot.png"
     },
     {
-        question: "Choose a frozen appetizer:",
-        option1: "Chicken Potstickers",
+        question: "Don't forget the best part. Choose a frozen appetizer:",
+        option1: "Mini Chicken Cilantro Wontons",
         option2: "Chicken Satay Skewers",
         option3: "Mac & Cheese Bites",
-        option4: "Puff Dogs",
-        value1: 2.49,
-        value2: 1.99,
-        value3: 2.99,
-        value4: 2.99,
-        image1: "./images/chicken_potstickers.jpg",
+        option4: "Puff Uncured Beef Dogs",
+        value1: 2.99,
+        value2: 4.49,
+        value3: 3.49,
+        value4: 6.49,
+        image1: "./images/wontons.jpg",
         image2: "./images/satay.JPG",
         image3: "./images/cheese_bites.png",
-        image4: "./images/puff_dogs.png"
+        image4: "./images/puff_dogs.jpg"
     },
     {
         question: "Choose a frozen dessert:",
-        option1: "Key Lime Pie",
+        option1: "Key Lime Pie Favorite",
         option2: "Salted Caramel Banana Pudding",
         option3: "Speculoos Cheesecake Bites",
         option4: "French Macarons",
@@ -92,17 +92,17 @@ var questions = [
         image4: "./images/macarons.jpg"
     },
     {
-        question: "Choose a snack to munch on throughout the day: ",
+        question: "Choose a snack to munch on throughout the week: ",
         option1: "Cheese Snack Sticks",
-        option2: "White Cheddar Corn Puffs",
+        option2: "Cinnamon Apple Sticks",
         option3: "Sweetened Dry Orange Slices",
         option4: "Baked Green Pea Snack",
         value1: 2.99,
-        value2: 1.99,
+        value2: 2.49,
         value3: 3.49,
         value4: 1.99,
         image1: "./images/cheese_sticks.jpg",
-        image2: "./images/corn_puffs.jpeg",
+        image2: "./images/apple_sticks.jpeg",
         image3: "./images/orange_slices.jpeg",
         image4: "./images/peas.jpg"
     },
@@ -112,10 +112,10 @@ var questions = [
         option2: "Ice Cream Sandwiches",
         option3: "Spinach & Artichoke Dip",
         option4: "Boddy Butter Trio",
-        value1: 0.99,
-        value2: 1.99,
-        value3: 0.99,
-        value4: 3.99,
+        value1: 3.69,
+        value2: 3.99,
+        value3: 2.69,
+        value4: 7.99,
         image1: "./images/speculoos_butter.jpg",
         image2: "./images/ice_cream.png",
         image3: "./images/artichoke_dip.jpg",
@@ -123,11 +123,11 @@ var questions = [
     },
     {
         question:
-            "One last thing. Choose something last minute to add to cart:",
+            "Wait, one more thing! Choose something last minute to add to cart:",
         option1: "Peanut Butter Cups",
         option2: "Green Tea Mints",
         option3: "One Greeting Card",
-        option4: "Moisturizing Face Lotion",
+        option4: "Sipping Chocolate",
         value1: 0.99,
         value2: 1.99,
         value3: 0.99,
@@ -135,7 +135,23 @@ var questions = [
         image1: "./images/pbcups.jpg",
         image2: "./images/greentea.jpg",
         image3: "./images/card.jpg",
-        image4: "./images/lotion.jpg"
+        image4: "./images/sipping.jpg"
+    },
+    {
+        question:
+            "Wait, one more thing! Choose something last minute to add to cart:",
+        option1: "Peanut Butter Cups",
+        option2: "Green Tea Mints",
+        option3: "One Greeting Card",
+        option4: "Sipping Chocolate",
+        value1: 0.99,
+        value2: 1.99,
+        value3: 0.99,
+        value4: 3.99,
+        image1: "./images/pbcups.jpg",
+        image2: "./images/greentea.jpg",
+        image3: "./images/card.jpg",
+        image4: "./images/sipping.jpg"
     }
 ];
 
